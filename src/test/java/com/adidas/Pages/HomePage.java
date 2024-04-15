@@ -8,10 +8,10 @@ public class HomePage extends BasePage {
     public WebElement laptopButton;
 
     @FindBy (xpath = "//a[text()='Sony vaio i5']")
-    public WebElement SonyVaioI5;
+    public WebElement sonyVaioI5;
 
     @FindBy (css = "#tbodyid > div:nth-of-type(1) .hrefch")
-    public WebElement DellI78gb;
+    public WebElement dellI78gb;
 
 
 }
