@@ -12,6 +12,9 @@ public class CartPage extends BasePage{
     @FindBy (xpath = "//a[text()='Delete']")
     public WebElement deleteButton;
 
+    @FindBy (xpath = "//button[.='Place Order']")
+    public WebElement placeOrderButton;
+
     @FindBy (id = "name")
     public WebElement nameField;
 

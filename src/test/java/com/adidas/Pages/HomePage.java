@@ -15,7 +15,7 @@ public class HomePage extends BasePage {
     @FindBy (xpath = "//a[text()='Sony vaio i5']")
     public WebElement sonyVaioI5;
 
-    @FindBy (css = "#tbodyid > div:nth-of-type(1) .hrefch")
+    @FindBy (xpath = "//a[.='Dell i7 8gb']")
     public WebElement dellI78gb;
 
 
