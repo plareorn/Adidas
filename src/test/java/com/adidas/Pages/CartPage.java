@@ -1,12 +1,19 @@
 package com.adidas.Pages;
 
+import com.adidas.Utilities.Driver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
 public class CartPage extends BasePage{
-
+    public CartPage(){
+        PageFactory.initElements(Driver.getDriver(), this);
+    }
     @FindBy (xpath = "//a[text()='Delete']")
     public WebElement deleteButton;
+
+    @FindBy (xpath = "//button[.='Place Order']")
+    public WebElement placeOrderButton;
 
     @FindBy (id = "name")
     public WebElement nameField;
