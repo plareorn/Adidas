@@ -12,8 +12,6 @@ public abstract class  BasePage {
     public BasePage(){
         PageFactory.initElements(Driver.getDriver(), this);
     }
-
-
         @FindBy (xpath = "(//a[@class='nav-link'])[1]")
         public WebElement homeButton;
 
